@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab');
+
+h2 {
+	font-family: 'Zilla Slab', serif;
+}
+.climbo {
+	font-family: 'Audiowide', cursive;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+html{overflow-y:hidden;}
+.main-container {
+	padding-left:20px; 
+	padding-right:20px; 
+	width: 100vw;
+	height: 100vh;
+	
+	background-image: url(img/fon.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.main-menu {
+	width:97%;
+	height: 50px;
+	background: #fff;
+	border-radius: 50px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 14px;
+}
+.menu-items{
+	width: 500px;
+	padding-right:365px;
+	}
+.menu-item{
+	display: flex;
+	justify-content: space-between;
+	
+	width:500px;
+}
+/*.menu-item li{
+	padding-right: 50px;
+}*/
+.reg-soc-blocks{
+	display: flex;
+	width: 200px;
+	justify-content: space-between;
+	width: 220px;
+	padding-right:45px;
+	}
+
+.reg-block{
+display: flex;
+justify-content: space-between;
+flex-grow: 1;
+margin-right: 25px; 
+}
+
+.soc-btn-block{
+	display: flex;
+	flex-basis: 75px;
+	justify-content: space-between;
+}
+li{
+list-style: none;
+}
+a {
+text-decoration: none;
+color:black;
+color:#31607e;
+outline: none;
+}
+.logo-img img{
+	width: 25px;
+	padding-left: 45px;
+}
+.main-content{
+	width: 900px;
+	margin:250px auto;
+	color:#fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.main-content h2{
+	font-size:75px;
+	font-weight: normal;
+}
+.main-content p{
+	font-size:20px;
+	padding-top: 10px;
+	}
+.btn-go{
+	padding-top: 50px;
+}
+.btn-go a{
+	width: 70px;
+	height: 35px;
+	border-radius: 50px;
+	background: #fff;
+	color:#31607e;
+	padding:10px 30px;
+	font-size:25px;
+}
+
+.mobile-block{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	
+	padding-top: 100px;
+}
+.mobile-menu i.fa-bars{
+	font-size:25px;
+	padding-top: 20px;
+	color:#fff;
+	}
+
+.climbo {
+	font-size:50px;
+
+	padding-top:70px;
+	color: #fff;
+}
+
+.climbo-content {
+	color:#fff;
+	text-align: center;
+	padding-top: 180px;
+	height: 50px;
+}
+.climbo-text{
+	padding-top: 7px;
+	padding-bottom:35px;
+	color:#ccd5dc;
+}
+.btn-join a{
+	width: 90px;
+	height: 35px;
+	border-radius: 50px;
+	background: #fff;
+	color:#000;
+	padding:10px 35px;
+	font-size:15px;
+}
+
+@media screen and (max-width: 960px) {
+	.main-menu, .main-content {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.mobile, .mobile-menu {
+	display: none;
+	}
+}
+@media screen and (max-width: 550px){
+.main-container {
+	height: 750px;
+	}
+}
