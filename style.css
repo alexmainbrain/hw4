@@ -11,6 +11,7 @@ h2 {
 body{
 	padding: 0;
 	margin: 0;
+	overflow:hidden;
 }
 html{overflow-y:hidden;}
 .main-container {
@@ -120,9 +121,9 @@ outline: none;
 	padding-top: 100px;
 }
 .mobile-menu i.fa-bars{
-	font-size:25px;
-	padding-top: 20px;
-	color:#fff;
+		font-size:25px;
+		padding-top: 20px;
+		color:#fff;
 	}
 
 .climbo {
@@ -152,9 +153,91 @@ outline: none;
 	padding:10px 35px;
 	font-size:15px;
 }
+.footer-block{
+		position: relative;
+		/*border:1px solid red;*/
+		/*width: 100px;
+		height: 100px;*/
+		bottom: 150px;
+		margin-left: 25px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.picture-block img{
+		padding-right: 5px;
+	}
+	/*.text{
+		display: flex;
+		justify-content: space-between;
+	}*/
+.text{
+	margin-right: 55px;
+}
+	.text img{
+	width: 15px;
+	margin-top: 5px;
+	position: relative;
+	bottom: -2px;
+	right: 8px;
+	}
+	.text span{
+		color:#fff;
+	}
 
-@media screen and (max-width: 960px) {
-	.main-menu, .main-content {
+@media screen and (max-width: 1200px) {
+	 .main-menu, .main-content, .footer-block{
+		display: none;
+	}
+}
+@media screen and (min-width: 1200px) {
+	.mobile-menu, .climbo, .climbo-content{
+		display: none;
+	}
+}
+@media screen and (max-width: 460px) {
+	.mobile-menu {
+		display: none;
+	}
+	.main-container {
+		padding-left: 0px;
+	}
+	.mobile-block {
+		padding-top: 0px;
+	}
+}
+
+/*@media screen and (min-width: 1200px){
+	.mobile-menu {
+		display: none;
+	}
+}
+@media screen and (max-width: 1200px){
+	.mobile-menu {
+		display: none;
+	}
+}
+@media screen and (max-width: 992px){
+	.main-menu, .main-content, .footer-block{
+		display: none;
+	}
+}
+@media screen and (max-width: 576px){
+	.mobile-menu{
+	display: none;
+	}
+}
+@media screen and (max-width: 576px){
+	.climbo-content {
+	padding-top: 0;
+}
+.main-container {
+	padding-left: 0;
+}
+}*/
+/********/
+/*@media screen and (max-width: 960px) {
+	.main-menu, .main-content, .footer-block,  {
 		display: none;
 	}
 }
@@ -165,7 +248,14 @@ outline: none;
 	}
 }
 @media screen and (max-width: 550px){
-.main-container {
-	height: 750px;
+.main-container,  {
+	height: 400px;
+ pa
 	}
+.climbo-content {
+	padding-top: 0;
 }
+}*/
+/*@media screen and (max-width: 960px) and (min-width: 550px) {
+	.mobile-menu
+}*/
